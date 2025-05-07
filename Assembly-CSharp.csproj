@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\UnityExample.cs" />
+    <Compile Include="Assets\FileReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\StreamingAssets\SiUSBXp.dll" />
