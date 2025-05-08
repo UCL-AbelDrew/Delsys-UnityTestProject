@@ -31,7 +31,7 @@ public class UnityExample : MonoBehaviour
     public Text APIStatusText;
     Pipeline RFPipeline;
     ITransformManager TransformManager;
-
+    
     // Use this for initialization
     void Start()
     {
@@ -97,8 +97,9 @@ public class UnityExample : MonoBehaviour
     public void InitializeDataSource()
     {
         //Load your key & license either through reflection as shown in the User Guide, or by hardcoding it to these strings.
-        string key = "";
-        string license = "";
+        FileReader fileReader = new FileReader();
+        string key = fileReader.ReadFile("/PublicKey.lic");
+        string license = fileReader.ReadFile("/UCL.lic");
 
         APIStatusText.text = "Creating device source . . . ";
         if(key.Equals("") || license.Equals("")){
