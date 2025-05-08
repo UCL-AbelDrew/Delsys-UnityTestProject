@@ -18,7 +18,7 @@ public class FileReader
         try
         {
             string fileContent = System.IO.File.ReadAllText(filePath);
-            //Debug.Log(fileContent); 
+          //  Debug.Log(fileContent); 
             return fileContent;
           
         }
