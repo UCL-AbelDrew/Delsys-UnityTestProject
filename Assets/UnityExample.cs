@@ -330,6 +330,7 @@ public class UnityExample : MonoBehaviour
     #region Collection Callbacks -- Data Ready, Colleciton Started, and Collection Complete
     public void CollectionDataReady(object sender, ComponentDataReadyEventArgs e)
     {
+
         APIStatusText.text = "Received data packet with average value: " + e.Data.First().Data.Average().ToString();
         int lostPackets = 0;
         int dataPoints = 0;
